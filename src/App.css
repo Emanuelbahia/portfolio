@@ -1,0 +1,19 @@
+/*  APP CSS */
+.container-portfolio{
+  display: flex;
+  flex-direction: column;   
+}
+
+
+/* media querie */
+
+@media (min-width: 768px) {
+
+  .container-portfolio{
+      display: flex;
+      flex-direction: column;   
+  }
+  
+  
+  
+}

@@ -1,0 +1,62 @@
+.container-projects{
+    width: 100%;
+    padding-top: 8vh;
+}
+.div-project-left{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 15vh;
+    padding-right: 10vh;
+}
+.div-project-right{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 15vh;
+    padding-left: 10vh;
+}
+.img-project{
+    width: 50%;
+    border-radius: 5px;
+}
+.description-left{
+    width: 50%;
+    padding-right: 5vh;
+}
+.description-right{
+    width: 50%;
+    padding-left: 5vh;
+}
+.h3-recipes{
+    text-align: center;
+    font-size: 3vh;
+}
+.p-projects{
+    font-size: 2vh;
+    margin: 0;
+    padding: 2vh 0;
+}
+.container-skills-links{
+}
+.ul-projects{
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    padding: 0;
+}
+.wraper-links{
+    padding: 2vh 0;
+}
+.li-projects{
+    color: rgb(3, 207, 207);
+    font-family: monospace;
+    margin-right: 2vh;
+}
+.button-link{
+    border: none;
+    width: 10vh;
+    height: 4vh;
+    border-radius: 5px;
+    margin-right: 2vh;
+    background-color: rgb(3, 207, 207);
+    color: black;
+}
