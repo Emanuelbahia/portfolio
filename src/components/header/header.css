@@ -1,12 +1,13 @@
 .header {
     background-color: rgba(10, 25, 47, 0.85);
-    width: 100%;
+    width: 100vw;
     height: 85px;
     position: fixed;
     top: 0;
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    z-index: 50;
   }
   .nav .p-navbar {
     display: none;
@@ -49,9 +50,22 @@
   }
   .navbar-link{
     text-decoration: none;
-    margin-bottom: 2vh;
+    display: flex;
+    align-items: center;
   }
-
+  .button-cv-cel{
+    border: 1px solid rgb(3, 207, 207);
+    background: none;
+    border-radius: 3px;
+    padding: 0.5vh 1vh;
+  }
+  .button-cv-tablet{
+    display: none;
+  }
+  .link-resume{
+    text-decoration: none;
+    color: rgb(3, 207, 207);
+  }
   
 /*  HAMBURGER MENU */
 .nav-icon-5{
@@ -119,6 +133,7 @@
         display: flex;
         color: rgb(184, 181, 181);
         margin-right: 1.2vw;
+        margin-bottom: 0;
         font-size: 15px;
         font-family: monospace;
       }
@@ -129,7 +144,20 @@
         color: rgb(3, 207, 207);
         cursor: pointer;
       }
-      
+      .button-cv-tablet{
+        display: block;
+        border: 1px solid rgb(3, 207, 207);
+        background: none;
+        border-radius: 3px;
+        padding: 0.5vh 1vh;
+      }
+      .button-cv-tablet:hover{
+        background-color: rgb(3, 207, 207);
+        border: none;
+      }
+      .link-resume:hover{
+        color: rgb(10, 25, 47);
+      }
       .container-items-menu{
         display: none;
       }

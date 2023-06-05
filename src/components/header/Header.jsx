@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link } from "react-scroll";
+import pdf from "../../../public/Emanuel Azcona cv.pdf"
 import "./header.css";
-import HamburgerMenu from '../HamburgerMenu';
 
 function Header() {
 
@@ -12,35 +12,43 @@ function Header() {
   }
 
   return (
-    <div className='header'> 
-      
-      <HamburgerMenu clicked={clicked} handleClick={handleClick} /> 
-      
+
+      <div className='header'> 
+        <div onClick={handleClick} className={`icon nav-icon-5 ${clicked ? "open" : ""} `}  >
+          <span></span>
+          <span></span>
+          <span></span>
+      </div>
       <div className={`div-links ${clicked ? "active" : ""} `}>
-        <Link className="navbar-link" to="about">
+        <Link className={`navbar-link  ${clicked ? "open" : ""} `} onClick={handleClick}  to="about">
           <div>
             <span className='span-link'>01.</span> 
             <p className="p-link">About</p>
           </div>
         </Link>
-        <Link className="navbar-link" to="skills">
+        <Link className={`navbar-link  ${clicked ? "open" : ""} `} onClick={handleClick}  to="skills">
           <div>
             <span className='span-link'>02.</span> 
             <p className="p-link">Skills</p>
           </div>
         </Link>
-        <Link className="navbar-link" to="projects">
+        <Link className={`navbar-link  ${clicked ? "open" : ""} `} onClick={handleClick}  to="projects">
           <div>
           <span className='span-link'>03.</span> 
           <p className="p-link">Projects</p>
           </div>
         </Link>
-        <Link className="navbar-link" to="contact">
+        <Link className={`navbar-link  ${clicked ? "open" : ""} `} onClick={handleClick}  to="contact">
           <div>
             <span className='span-link'>04.</span> 
             <p className="p-link">Contact</p>
           </div>
         </Link>
+        <button className="button-cv-cel">
+          <a href={pdf} target="_blank" rel="noopener noreferrer" className='link-resume' > 
+            Resume
+          </a>
+        </button>
       </div>  
       <div className='nav'> 
           <Link className="navbar-link" to="about" smooth={true} offset={50} duration={300}>
@@ -54,7 +62,12 @@ function Header() {
           </Link>
           <Link className="navbar-link" to="contact" smooth={true} offset={50} duration={300}>
               <p className='p-navbar'><span className='span-navbar'>04.</span> Contact</p>
-          </Link>           
+          </Link> 
+          <button className="button-cv-tablet">
+            <a href={pdf} target="_blank" rel="noopener noreferrer" className='link-resume'  > 
+              Resume 
+            </a>
+          </button>       
       </div> 
     </div> 
   )

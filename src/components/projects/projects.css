@@ -1,30 +1,29 @@
 .container-projects{
-    width: 100%;
-    padding-top: 8vh;
+    width: 100vw;
+    padding: 4vh 15vw 0;
 }
 .div-project-left{
     display: flex;
-    flex-direction: row;
-    padding-bottom: 15vh;
-    padding-right: 10vh;
+    flex-direction: column;
+    padding-bottom: 7vh;
 }
 .div-project-right{
     display: flex;
-    flex-direction: row;
-    padding-bottom: 15vh;
-    padding-left: 10vh;
+    flex-direction: column;
+    padding-bottom: 7vh;
 }
 .img-project{
-    width: 50%;
+    width: 100%;
     border-radius: 5px;
+    object-fit: cover;
+    margin: 2vh 0 1vh;
+    filter: brightness(0.5);
 }
-.description-left{
-    width: 50%;
-    padding-right: 5vh;
+.img-project:hover{
+    filter: none;
 }
-.description-right{
-    width: 50%;
-    padding-left: 5vh;
+.none-cel{
+    display: none;
 }
 .h3-recipes{
     text-align: center;
@@ -34,8 +33,6 @@
     font-size: 2vh;
     margin: 0;
     padding: 2vh 0;
-}
-.container-skills-links{
 }
 .ul-projects{
     list-style: none;
@@ -59,4 +56,92 @@
     margin-right: 2vh;
     background-color: rgb(3, 207, 207);
     color: black;
+}
+.github-project{
+    color: rgb(3, 207, 207);
+    font-size: 4vw;
+    margin-right: 2vh;
+}
+.arrow-project{
+    color: rgb(3, 207, 207);
+    font-size: 4vw;
+}
+
+@media (min-width: 768px) { 
+    .container-projects{
+        padding: 4vh 22vw 0;
+    }
+    .github-project, .arrow-project{
+        font-size: 3vh;
+    }
+    .wraper-links{
+        padding: 0;
+    }
+
+}
+
+@media (min-width: 1024px) { 
+    .none-pc{
+        display: none;
+    }
+    .none-cel{
+        display: block;
+    }
+    .description-left, .description-right {
+        width: 55%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .img-project{
+        width: 100%;
+        height: 40vh;
+        margin: 0;
+        object-fit: cover;
+        z-index: 0;
+    }
+    .div-project-left, .div-project-right{
+        flex-direction: row;
+    }
+    .ul-projects, .wraper-links{
+        padding: 1vh 0;
+    }
+    .p-projects{
+        padding: 0;
+    }
+    .ul-projects{
+        margin: 0;
+    }
+    .p-right{
+        text-align: end;
+        width: 40vw;
+        z-index: 1;
+        position: relative;
+        background: rgb(20 33 53);
+        opacity: .9;
+        border-radius: 5px;
+        padding: 2vh;
+        right: 9vw;
+        margin-bottom: 2vh;
+    }
+    .ul-right, .links-right{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .p-left{
+        width: 40vw;
+        z-index: 1;
+        position: relative;
+        background: rgb(20 33 53);
+        opacity: .9;
+        border-radius: 5px;
+        padding: 2vh;
+        margin-bottom: 2vh;
+    }
+    .github-project:hover{
+        transform: scale(1.15);
+    }
+    .arrow-project:hover{
+        transform: scale(1.15);
+    }
 }
