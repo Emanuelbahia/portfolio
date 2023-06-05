@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link } from "react-scroll";
-import pdf from "../../../public/Emanuel Azcona cv.pdf"
+import pdf from "../../../public/images/Emanuel Azcona cv.pdf"
 import "./header.css";
 
 function Header() {

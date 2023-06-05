@@ -101,8 +101,7 @@
       padding: 12vh 15vh;
     }
     .about-section {
-      padding-left: 15vh;
-      padding-right: 5vh;
+      padding: 10vw 12vh !important
     }
     .main-section {
       padding: 10vw 0;

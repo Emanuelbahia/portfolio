@@ -1,5 +1,10 @@
 import { BsBoxArrowUpRight, BsGithub } from "react-icons/bs";
 import { Link } from "react-router-dom";
+import recipes from "../../../public/images/recipes.jpg";
+import hotel from "../../../public/images/hotels.jpg";
+import plant from "../../../public/images/apiplant.jpg";
+import beauty from "../../../public/images/api beauty.jpg";
+import weather from "../../../public/images/api weather.jpg";
 import "./projects.css";
 
 export default function Projects() {
@@ -9,7 +14,7 @@ export default function Projects() {
         <div className="description-left">
             <h3 className="h3-recipes">Recipes Food</h3>
             <Link to="https://foodapirecipes.netlify.app/">
-              <img className="img-project none-pc" src="../../../public/recipes.jpg" />
+              <img className="img-project none-pc" src={ recipes } />
             </Link>
             <p className="p-projects p-left">
             This project is a food recipe application developed with javascript and react.
@@ -28,13 +33,13 @@ export default function Projects() {
             </div>  
         </div>
         <Link to="https://foodapirecipes.netlify.app/" >
-          <img className="img-project none-cel" src="../../../public/recipes.jpg" /> 
+          <img className="img-project none-cel" src={ recipes } /> 
         </Link>
       </div>
       <div className="div-project-right">
         <h3 className="h3-recipes none-pc">Your Hotel</h3>
         <Link to="https://emanuelbahia.github.io/">
-          <img className="img-project" src="../../../public/hotels.jpg" />
+          <img className="img-project" src={ hotel }/>
         </Link>
         <div className="description-right">
             <h3 className="h3-recipes none-cel">Your Hotel</h3>
@@ -59,7 +64,7 @@ export default function Projects() {
         <div className="description-left">
             <h3 className="h3-recipes">Plants for the soul</h3>
             <Link to="https://plantsforthesoul.netlify.app/">
-              <img className="img-project none-pc" src="../../../public/apiplant.jpg" />
+              <img className="img-project none-pc" src={ plant } />
             </Link>
             <p className="p-projects p-left">
             Is an application that offers a wide selection of indoor plants to beautify and purify homes developed with javascript and react.
@@ -78,13 +83,13 @@ export default function Projects() {
             </div>  
         </div>
         <Link to="https://plantsforthesoul.netlify.app/">
-          <img className="img-project none-cel" src="../../../public/apiplant.jpg" />
+          <img className="img-project none-cel" src={ plant } />
         </Link>
       </div>
       <div className="div-project-right">
         <h3 className="h3-recipes none-pc">Api beauty</h3>
         <Link to="https://apibeauty.netlify.app/">
-          <img className="img-project" src="../../../public/api beauty.jpg" />
+          <img className="img-project" src={ beauty } />
         </Link>
         <div className="description-right">
             <h3 className="h3-recipes none-cel">Api beauty</h3>
@@ -109,7 +114,7 @@ export default function Projects() {
         <div className="description-left">
             <h3 className="h3-recipes">Weather now</h3>
             <Link to="https://appiweather.netlify.app/">
-              <img className="img-project none-pc" src="../../../public/api weather.jpg" />
+              <img className="img-project none-pc" src={ weather } />
             </Link>
             <p className="p-projects p-left">
               Is a web application developed with JavaScript and React that provides accurate weather forecast information for any city on the planet. 
@@ -127,7 +132,7 @@ export default function Projects() {
             </div>  
         </div>
         <Link to="https://appiweather.netlify.app/">
-          <img className="img-project none-cel" src="../../../public/api weather.jpg" />
+          <img className="img-project none-cel" src={ weather } />
         </Link>
       </div>
     </div>
